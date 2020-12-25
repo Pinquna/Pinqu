@@ -1,11 +1,11 @@
 ﻿using System.Xml.Linq;
 using UnityEngine;
 using UnityEngine.Assertions;
-
+using UnityEditor.Experimental.AssetImporters;
 
 namespace SuperTiled2Unity.Editor
 {
-    [UnityEditor.AssetImporters.ScriptedImporter(ImporterConstants.TilesetVersion, ImporterConstants.TilesetExtension, ImporterConstants.TilesetImportOrder)]
+    [ScriptedImporter(ImporterConstants.TilesetVersion, ImporterConstants.TilesetExtension, ImporterConstants.TilesetImportOrder)]
     public class TsxAssetImporter : TiledAssetImporter
     {
         // Serialized data to be used in the import process

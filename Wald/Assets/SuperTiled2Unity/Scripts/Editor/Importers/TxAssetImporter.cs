@@ -1,12 +1,12 @@
 ﻿using System.Xml.Linq;
-
+using UnityEditor.Experimental.AssetImporters;
 using UnityEngine;
 using UnityEngine.Assertions;
 
 // Importer for Tiled TX (template) files
 namespace SuperTiled2Unity.Editor
 {
-    [UnityEditor.AssetImporters.ScriptedImporter(ImporterConstants.TemplateVersion, ImporterConstants.TemplateExtension, ImporterConstants.TemplateImportOrder)]
+    [ScriptedImporter(ImporterConstants.TemplateVersion, ImporterConstants.TemplateExtension, ImporterConstants.TemplateImportOrder)]
     public class TxAssetImporter : SuperImporter
     {
         private ObjectTemplate m_ObjectTemplate;
